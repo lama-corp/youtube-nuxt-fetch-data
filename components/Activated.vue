@@ -27,7 +27,7 @@ export default {
   activated() {
     // eslint-disable-next-line no-console
     console.log('Activated activated()')
-    // appeler fetch de nouveau si le dernier appel date de plus de 30 secondes
+    // appeler fetch de nouveau si le dernier appel date de plus de 10 secondes
     if (this.$fetchState.timestamp <= Date.now() - 10000) {
       this.$fetch()
     }

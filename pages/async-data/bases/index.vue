@@ -12,7 +12,7 @@
 export default {
   name: 'PageBasesIndex',
   // Pour Nuxt < 2.12, utilisez fetch(context)
-  // Ex : async fetch({ $axios }) {
+  // async fetch() {
   async asyncData({ $axios }) {
     const beers = await $axios.$get('https://api.nuxtjs.dev/beers')
 

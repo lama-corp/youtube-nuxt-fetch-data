@@ -17,7 +17,7 @@ export default {
   name: 'PageBasesIndex',
   async asyncData({ $axios, query }) {
     // eslint-disable-next-line no-console
-    console.log('PageBasesIndex asyncData')
+    console.log('PageBasesIndex asyncData', query)
     const currentPage = query?.currentPage ?? 0
     const planets = await $axios.$get(
       `https://api.nuxtjs.dev/planets?page=${currentPage}`
@@ -28,7 +28,7 @@ export default {
       currentPage: parseInt(currentPage),
     }
   },
-  // watchQuery: true,
+  // watchQuery: ['currentPage'],
   watchQuery(newReq, prevReq) {
     // eslint-disable-next-line no-console
     console.log('PageBasesIndex watchQuery', newReq, prevReq)

@@ -9,17 +9,16 @@
 <script>
 export default {
   name: 'PageAsyncDataError',
-  async asyncData({ $axios }) {
-    const mountains = await $axios.$get('https://api.nuxtjs.dev/mountains')
+  async asyncData({ $axios, redirect }) {
+    try {
+      const mountains = await $axios.$get('https://api.nuxtjs.dev/moudntains')
 
-    return {
-      mountains,
+      return {
+        mountains,
+      }
+    } catch(err) {
+      redirect('/')
     }
-  },
-  async mounted() {
-    // eslint-disable-next-line no-console
-    console.log('PageAsyncDataError mounted()')
-    await this.$axios.$get(`https://api.nuxtjs.dev/beers/dsqokifsql`)
   },
 }
 </script>

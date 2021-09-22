@@ -20,6 +20,11 @@
 <script>
 export default {
   name: 'LayoutDefault',
+  // Ceci n'est jamais exécuté
+  asyncData() {
+    // eslint-disable-next-line no-console
+    console.log('ASYNCDATA LAYOUT')
+  },
   data() {
     return {
       links: [
@@ -35,6 +40,8 @@ export default {
         { name: 'fetch-activated', label: 'Fetch', subLabel: 'hook activated' },
         { name: 'fetch-delay', label: 'Fetch', subLabel: 'délai' },
         { name: 'fetch-layout', label: 'Fetch', subLabel: 'layout' },
+        { name: 'fetch-query', label: 'Fetch', subLabel: 'query' },
+        { name: 'fetch-error', label: 'Fetch', subLabel: 'erreurs' },
       ],
     }
   },

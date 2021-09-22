@@ -23,6 +23,10 @@ export default {
       beer,
     }
   },
+  mounted() {
+    // eslint-disable-next-line no-console
+    console.log('PageBasesBasesId mounted()')
+  },
   methods: {
     goTo(id) {
       // eslint-disable-next-line no-console

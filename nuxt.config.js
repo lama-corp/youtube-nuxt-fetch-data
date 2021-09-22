@@ -1,7 +1,8 @@
 export default {
+  ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'youtube-nuxt-async-data',
+    title: 'Youtube NuxtJS AsyncData Fetch',
     htmlAttrs: {
       lang: 'en',
     },

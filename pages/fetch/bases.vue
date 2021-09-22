@@ -38,17 +38,10 @@ export default {
   async fetch() {
     console.log('PageFetch fetch()')
     const objectType = this.modulo % 2 === 0 ? 'planets' : 'mountains'
-    const url = `https://api.nuxtjs.dev/${objectType}`
-    this.items = await this.$axios.$get(url)
+    this.items = await this.$axios.$get(`https://api.nuxtjs.dev/${objectType}`)
     this.modulo++
   },
-  activated() {
-    // appeler fetch de nouveau si le dernier appel date de plus de 30 secondes
-    if (this.$fetchState.timestamp <= Date.now() - 10000) {
-      this.$fetch()
-    }
-  },
-  fetchOnServer: false,
+  fetchOnServer: true,
   // fetchOnServer() { return true }
 }
 </script>
