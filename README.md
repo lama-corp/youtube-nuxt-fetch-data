@@ -24,7 +24,7 @@ Sources :
 
 # Nuxt Fetch
 
-Nuxt 2 fetch : récupération de données, délais, query et gestions des erreurs
+Nuxt 2 fetch : récupération de données, délais, watchQuery et gestions des erreurs
 
 ## Video description
 
@@ -43,6 +43,7 @@ N'hésitez pas à vous abonner / follow sur Youtube ... Mais aussi :
 - Twitter : https://twitter.com/LamaCodeur
 
 Sources :
-- [EN] Debbie : https://www.youtube.com/watch?v=M-h9_6ii0wc&t=2s
-- [FR] Documentation : https://fr.nuxtjs.org/docs/2.x/features/data-fetching#async-data
-- [EN] Documentation : https://nuxtjs.org/docs/2.x/features/data-fetching#async-data
+- [FR] Documentation : https://nuxtjs.org/fr/docs/features/data-fetching/#le-hook-fetch
+- [EN] Documentation : https://nuxtjs.org/docs/features/data-fetching/#the-fetch-hook
+- [EN] Debbie #1 fetch : https://www.youtube.com/watch?v=KOAJPmnMTEY
+- [EN] Debbie #2 $fetchState : https://www.youtube.com/watch?v=AgoomXjjX24
